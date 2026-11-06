@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora WebAssembly</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Calculadora Científica WebAssembly</h1>
+
+    <label for="operacion">Selecciona una función:</label>
+    <select id="operacion">
+        <option value="celsiusAFahrenheit">Celsius a Fahrenheit</option>
+        <option value="fahrenheitACelsius">Fahrenheit a Celsius</option>
+        <option value="calcularAreaCirculo">Área de Círculo</option>
+        <option value="calcularAreaTriangulo">Área de Triángulo</option>
+        <option value="calcularAreaRectangulo">Área de Rectángulo</option>
+        <option value="calcularAreaExagono">Área de Hexágono</option>
+        <option value="sumar">Sumar</option>
+        <option value="restar">Restar</option>
+        <option value="multiplicar">Multiplicar</option>
+        <option value="dividir">Dividir</option>
+        <option value="potencia">Potencia</option>
+        <option value="raizCuadrada">Raíz Cuadrada</option>
+    </select>
+
+    <!-- Input 1 -->
+    <label id="labelA" for="inputA">Valor A:</label>
+    <input id="inputA" type="number" value="0">
+
+    <!-- Input 2 (A veces oculto, a veces visible) -->
+    <label id="labelB" for="inputB">Valor B:</label>
+    <input id="inputB" type="number" value="0">
+
+    <button id="btnConvertir">Calcular</button>
+
+    <p id="resultado"></p>
+
+    <script src="ProyectoCalculoCientifico.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
